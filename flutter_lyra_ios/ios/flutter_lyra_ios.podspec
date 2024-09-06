@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
 
-  s.platform = :ios, '11.0'
+  s.platform = :ios, '12.0'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }  
-  s.swift_version = '5.0'
+  s.swift_version = '5.3'
 
   s.dependency 'LyraPaymentSDK', '~> 2.6.8'
   s.dependency 'LyraCardsRecognizer', '~> 2.0.1'
