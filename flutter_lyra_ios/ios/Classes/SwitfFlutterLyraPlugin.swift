@@ -151,7 +151,6 @@ public class SwiftFlutterLyraPlugin: NSObject, FlutterPlugin, LyraHostApi {
                                 ))
                             }
                         } catch {
-                               // Manejar errores de decodificación
                             completion(nil,  FlutterError(
                                 code: "lyra_process_error_code",
                                 message: "An unknown error occured",
@@ -159,7 +158,6 @@ public class SwiftFlutterLyraPlugin: NSObject, FlutterPlugin, LyraHostApi {
                             ))
                         }
                     } else {
-                           // Si getResponseData no devuelve un Data
                         completion(nil,  FlutterError(
                             code: "lyra_process_error_code",
                             message: "An unknown error occured",
